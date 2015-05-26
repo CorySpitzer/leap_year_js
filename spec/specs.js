@@ -6,4 +6,8 @@ describe('leapYear', function() {
   it("is true for years divisible by 4", function() {
     expect(leapYear(2012)).to.equal(true);
   })
+
+  it("is false form most years divisible by 100", function() {
+    expect(leapYear(1900)).to.equal(false);
+  });
 });
