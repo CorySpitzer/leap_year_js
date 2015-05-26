@@ -5,9 +5,13 @@ describe('leapYear', function() {
 
   it("is true for years divisible by 4", function() {
     expect(leapYear(2012)).to.equal(true);
-  })
+  });
 
-  it("is false form most years divisible by 100", function() {
+  it("is false for most years divisible by 100", function() {
     expect(leapYear(1900)).to.equal(false);
+  });
+
+  it("is true for most years divisible by 400", function() {
+    expect(leapYear(800)).to.equal(true);
   });
 });
